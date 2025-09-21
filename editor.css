@@ -1,0 +1,88 @@
+
+    body {
+      font-family:'Times New Roman' ;
+      margin: 0; 
+      padding: 0; 
+      background: #f4f7f9;
+      color: #333;
+    }
+    header {
+      background: #ff00aa;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .container {
+    
+      padding: 15px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .tabs button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background: #ddd;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .tabs button.active {
+      background:  #ff00aa;
+      color: white;
+    }
+    textarea {
+      width: 100%;
+      height: 180px;
+      font-family: monospace;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    button.run {
+      margin-top: 12px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background: #28a745;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      align-self: flex-start;
+      transition: 0.3s;
+    }
+    button.run:hover {
+      background: #218838;
+    }
+    iframe {
+      margin-top: 15px;
+      width: 100%;
+      height: 300px;
+      border: 1px solid #cccc;
+      border-radius: 6px;
+      background: white;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.15);
+    }
+    iframe.preview{
+      margin-top: 12px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      
+
+
+    }
+    

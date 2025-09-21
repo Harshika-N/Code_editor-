@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Mini Code Editor </title>
+  <link rel ="stylesheet" href="editor.css"/>
+</head>
+
+<body>
+  <header> Simple Online Code Editor</header>
+  
+  <div class="container">
+    
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showTab('html')">HTML</button>
+      <button class="tab-btn" onclick="showTab('css')">CSS</button>
+      <button class="tab-btn" onclick="showTab('js')">JavaScript</button>
+    </div>
+
+    
+    <textarea id="html" class="code-tab">
+<p>Welcome to Web Development</p>
+<h1>Hello everyone, Here you can edit html and write the code of your wish!</h1>
+<p>Edit this HTML and click Run!</p>
+    </textarea>
+
+    <textarea id="css" class="code-tab" style="display:none;">
+body { background: #fafafa; font-family: Calibri; }
+h1 { color: #05EB27; }
+p { font-size: px; }
+    </textarea>
+
+    <textarea id="js" class="code-tab" style="display:none;">
+console.log("JavaScript is working!");
+alert("Welcome to the Mini Code Editor ");
+    </textarea>
+    <button class="run" onclick="runCode()"> Run Code</button>
+    <iframe id="preview"></iframe>
+  </div>
+  <script src="editor.js"></script>
+</body>
+</html>
